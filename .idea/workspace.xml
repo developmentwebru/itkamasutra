@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d941616-be17-4876-95cd-30298d74730b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersC.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersC.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersC.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
     </list>
@@ -50,11 +49,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\node\itka\src\components\Users" />
       <recent name="D:\node\my-app\src\components\Users" />
       <recent name="D:\node\my-app\src\redux" />
       <recent name="D:\node\my-app\src\components\Dialogs" />
       <recent name="D:\node\my-app\src\components\Content\MyPosts" />
-      <recent name="D:\node\my-app\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\node\my-app\src" />
@@ -89,7 +88,10 @@
       <workItem from="1608797205419" duration="32116000" />
       <workItem from="1608878382787" duration="26617000" />
       <workItem from="1608931385086" duration="4929000" />
-      <workItem from="1608967993996" duration="2014000" />
+      <workItem from="1608967993996" duration="5986000" />
+      <workItem from="1608974436188" duration="600000" />
+      <workItem from="1608975190376" duration="95000" />
+      <workItem from="1608976626348" duration="751000" />
     </task>
     <servers />
   </component>
