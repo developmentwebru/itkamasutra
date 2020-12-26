@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d941616-be17-4876-95cd-30298d74730b" name="Default Changelist" comment="" />
+    <list default="true" id="4d941616-be17-4876-95cd-30298d74730b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Content/ContentContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Users" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Content" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -41,11 +50,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\node\itka\src\components\Content" />
       <recent name="D:\node\itka\src\components\Users" />
       <recent name="D:\node\my-app\src\components\Users" />
       <recent name="D:\node\my-app\src\redux" />
       <recent name="D:\node\my-app\src\components\Dialogs" />
-      <recent name="D:\node\my-app\src\components\Content\MyPosts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\node\my-app\src" />
@@ -83,7 +92,7 @@
       <workItem from="1608967993996" duration="5986000" />
       <workItem from="1608974436188" duration="600000" />
       <workItem from="1608975190376" duration="95000" />
-      <workItem from="1608976626348" duration="6144000" />
+      <workItem from="1608976626348" duration="10884000" />
     </task>
     <servers />
   </component>
