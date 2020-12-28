@@ -1,20 +1,19 @@
 import React from 'react';
 import Content from "./Content";
-import * as axios from "axios";
 import {connect} from "react-redux";
 import {getStatus, getUserProfile, updateStatus} from "../../redux/profile-reducer";
 import {withRouter} from "react-router-dom";
-import {Redirect} from "react-router-dom";
-import {withAuthRedirect} from "../../hoc/wthAuthRedirect";
 import {compose} from "redux";
 
-
-class ContentContainer extends React.Component{
+class ContentContainer extends React.Component {
 
     componentDidMount() {
-        let userId =this.props.match.params.userId;
+        let userId = this.props.match.params.userId;
         if (!userId) {
-            userId =this.props.authorizedUserId;
+            userId = this.props.authorizedUserId;
+            if (!userId) {
+                this.props.history.push("/login")
+            }
         }
         this.props.getUserProfile(userId);
         this.props.getStatus(userId);
@@ -22,10 +21,12 @@ class ContentContainer extends React.Component{
 
     render() {
         return (
-            <Content {...this.props} profile={this.props.profile} status={this.props.status} updateStatus={this.props.updateStatus}/>
+            <Content {...this.props} profile={this.props.profile} status={this.props.status}
+                     updateStatus={this.props.updateStatus}/>
         )
     }
 }
+
 let mapStateToProps = (state) => ({
     profile: state.profilePage.profile,
     status: state.profilePage.status,
@@ -34,7 +35,7 @@ let mapStateToProps = (state) => ({
 
 });
 export default compose(
-    connect(mapStateToProps,{getUserProfile, getStatus, updateStatus}),
+    connect(mapStateToProps, {getUserProfile, getStatus, updateStatus}),
     withRouter,
     //withAuthRedirect
 )(ContentContainer);
