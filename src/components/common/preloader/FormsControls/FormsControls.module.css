@@ -8,3 +8,9 @@
 {
     color: aquamarine;
 }
+
+.formSummaryError {
+    border: solid blueviolet 5px;
+    padding: 10px;
+    color: burlywood;
+}
