@@ -55,3 +55,4 @@ it('after deleting of messages shouldnot be decrement if id is incorrect', () =>
 
     expect (newState.posts.length).toBe(6);
 });
+
