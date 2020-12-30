@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
-import {BrowserRouter, Route, withRouter} from "react-router-dom";
+import {HashRouter, Route, withRouter} from "react-router-dom";
 //import DialogsContainer from "./components/Dialogs/DialogsContainer";
 
 import UsersContainer from "./components/Users/UsersContainer";
@@ -22,37 +22,37 @@ class App extends Component {
     componentDidMount() {
         this.props.initializeApp();
     }
-    render() {
-        if (!this.props.initialized){
 
-        return <Preloader />
+    render() {
+        if (!this.props.initialized) {
+
+            return <Preloader/>
         }
         return (
 
-                <div className='app-wrapper'>
-                    <HeaderContainer/>
-                    <Navbar/>
-                    <div className='app-wrapper-content'>
-                        {/* <Route path='/dialogs' component={Dialogs}/>
+            <div className='app-wrapper'>
+                <HeaderContainer/>
+                <Navbar/>
+                <div className='app-wrapper-content'>
+                    {/* <Route path='/dialogs' component={Dialogs}/>
                     <Route path='/content' component={Content}/>*/}
 
 
-                        <Route path='/dialogs' render={withSuspense(DialogsContainer)}/>
-                        <Route path='/content/:userId?' render={withSuspense(ContentContainer)}/>
+                    <Route path='/dialogs' render={withSuspense(DialogsContainer)}/>
+                    <Route path='/content/:userId?' render={withSuspense(ContentContainer)}/>
 
 
+                    <Route path='/users' render={() => <UsersContainer/>}/>
+                    <Route path='/login' render={() => <LoginPage/>}/>
 
-
-                        <Route path='/users' render={() => <UsersContainer/>}/>
-                        <Route path='/login' render={() => <LoginPage/>}/>
-
-                    </div>
                 </div>
+            </div>
 
         )
     }
 }
-const mapStateToProps =(state) => ({
+
+const mapStateToProps = (state) => ({
     initialized: state.app.initialized
 })
 
@@ -61,11 +61,11 @@ let AppContainer = compose(
     connect(mapStateToProps, {initializeApp}))(App);
 
 const SamuraiJSApp = (props) => {
-    return <BrowserRouter>
+    return <HashRouter basename={process.env.PUBLIC_URL}>
         <Provider store={store}>
-            <AppContainer />
+            <AppContainer/>
         </Provider>
-    </BrowserRouter>
+    </HashRouter>
 }
 
 export default SamuraiJSApp;
