@@ -1,6 +1,4 @@
 import React from "react";
-
-import s from "./Login.module.css";
 import {reduxForm} from "redux-form";
 import {createField, Input} from "../common/preloader/FormsControls/FormsControls";
 import {required} from "../../utils/validators/validators";
